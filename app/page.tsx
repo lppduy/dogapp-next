@@ -1,10 +1,10 @@
-import AppMenuItem from "./APP/COMPONENTS/AppMenuItem";
+import AppMenuItemGroup from "./APP/COMPONENTS/AppMenuItemGroup";
 
 export default function Home() {
   return (
-    <>
-      <h1 className="">HOME PAGE</h1>
-      <AppMenuItem />
-    </>
+    <div className="CENTER gap-8 flex-col">
+      <h1 className="">Home Page</h1>
+      <AppMenuItemGroup />
+    </div>
   );
 }

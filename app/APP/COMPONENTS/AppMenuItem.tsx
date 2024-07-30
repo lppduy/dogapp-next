@@ -1,7 +1,10 @@
 import React from "react";
-import { FaDog } from "react-icons/fa";
-export default function AppMenuItem() {
-  return <div className="bg-red-500 w-[60px] h-[30px] CENTER">
-    <FaDog />
+
+
+
+export default function AppMenuItem({ text, icon }: TitleIcon) {
+  return <div className="hover:bg-[#8A6032] text-white hover:cursor-pointer 
+   w-[90px] h-[35px] gap-2 CENTER rounded-md">
+    {icon} <span>{text}</span>
   </div>;
 }
